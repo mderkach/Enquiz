@@ -1,0 +1,361 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+.relative
+    position: relative
+.absolute
+    position: absolute
+.rectangle
+    width: 350px
+    height: 360px
+.m-60
+    margin: 60px 0
+.mb-115
+    margin-bottom: 115px
+.mb-200
+    margin-bottom: 200px
+.mt-200
+    margin-top: 200px
+
+h1
+    color: $text
+    font-size: 48px
+    font-weight: 900
+    line-height: 72px
+h2
+    color: #303030
+    font-size: 36px
+    font-weight: 700
+    line-height: 36px
+h3
+    font-size: 30px
+    font-weight: 500
+    line-height: 36px
+    
+p
+    color: #303030
+    font-family: $alternate-font
+    font-size: 18px
+    font-weight: 300
+    line-height: 36px
+    
+a.btn, button.btn
+    border-radius: 30px
+    font-family: $alternate-font
+    font-size: 16px
+    font-weight: 600
+    line-height: 32px
+    text-transform: uppercase
+  
+.screen
+    padding: 30px 0
+header
+    padding: 20px 0
+
+.main-screen
+    .rectangle
+        right: 0
+        bottom: -60%
+.fourth-screen
+    .rectangle
+        right: 0
+        bottom: -5%
+
+.nav-item
+    .nav-link
+        color: #000
+        font-size: 18px
+        font-weight: 400
+        line-height: 18px
+        margin: 5px 10px
+        
+.test-quiz
+    background-image: linear-gradient(to top, #3b7cff 0%, #6084f9 100%)
+    text-transform: uppercase
+    color: #fff
+    padding: 24px 66px
+    &:hover
+        box-shadow: $box-shadow
+.tab
+    display: none
+.tab-active
+    display: block
+    
+.capabilities-wrapper
+    box-shadow: $box-shadow
+ 
+a.capability-btn
+    background: transparent
+    border: none
+    border-radius: 0
+    height: 120px
+    line-height: 1
+    border-radius: 0
+    color: #000
+    span
+        font-family: $default-font
+        font-size: 18px
+        font-weight: 500
+        line-height: 18px
+    &:hover
+        box-shadow: $box-shadow
+    img
+        margin: 0 0 10px
+.capability-btn.active
+    background: $button-hover-gradient!important
+.capability-img__wrapper       
+    box-shadow: $box-shadow
+    margin: 10px 12px 10px 0
+.capability-img
+    margin: 0 auto
+.capability-descr__wrapper
+    max-width: 90%
+    margin: 0 auto
+.third-screen
+    padding: 120px 0 70px
+    box-shadow: 0 0 17px 3px rgba(0, 0, 0, 0.3)
+    background-image: linear-gradient(to left, #66cfdc 0%, #77dce9 100%)
+
+.after
+    &:after
+        display: block
+        content: ''
+        width: 350px
+        height: 1px
+        background-color: $after
+        margin: 30px 0
+.fourth-screen
+    padding: 200px 0
+.feature-item
+    margin: 50px 0
+    .feature-item__descr
+        h3
+            font-size: 28px
+            margin-bottom: 30px
+        p
+            margin: 30px 0 50px
+            
+.feature-btn
+    background: transparent
+    border: 1px solid #6273de
+    color: #4d6fde
+    font-family: "SourceSans"
+    font-size: 14px
+    font-weight: 600
+    line-height: 32px
+    text-transform: uppercase
+    padding: 15px 48px 
+    &:hover
+        background: #6273de
+        color: #fff
+    
+.slider-form
+    border-radius: 3px
+    border: 1px solid #d4d4d4
+    margin: 65px 0 55px
+    padding: 60px 0
+    
+input[type=range] 
+    appearance: none
+    width: 100%
+    margin: 8px 0
+    &:focus 
+        outline: none
+    &::-webkit-slider-runnable-track 
+        width: 100%
+        height: 8.4px
+        cursor: pointer
+        box-shadow: none
+        background: #1069d7
+        border-radius: 3px
+    &::-webkit-slider-thumb 
+        box-shadow: none
+        border: none
+        height: 24px
+        width: 30px
+        border-radius: 3px
+        background: #ffffff
+        cursor: pointer
+        appearance: none
+        margin-top: -8px
+    &::-moz-range-track 
+        width: 100%
+        height: 8.4px
+        cursor: pointer
+        box-shadow: none
+        background: #1069d7
+        border-radius: 3px
+    &::-moz-range-thumb 
+        box-shadow: none
+        border: none
+        height: 24px
+        width: 30px
+        border-radius: 3px
+        background: #ffffff
+        cursor: pointer
+    &::-ms-track 
+        width: 100%
+        height: 8.4px
+        cursor: pointer
+        background: transparent
+        border-color: transparent
+        color: transparent
+    &::-ms-fill-lower 
+        background: #2a6495
+        border-radius: 6px
+        box-shadow: none
+    &::-ms-fill-upper 
+        background: #1069d7
+        border-radius: 6px
+        box-shadow: none
+    &::-ms-thumb 
+        box-shadow: none
+        border: none
+        height: 24px
+        width: 30px
+        border-radius: 3px
+        background: #ffffff
+        cursor: pointer
+        height: 8px
+
+input[id=request]
+    &::-webkit-slider-thumb
+        background: transparent
+        background-image: linear-gradient(to top, #2376bc 0%, #77a4ee 100%)
+    &::-moz-range-thumb
+        background: transparent
+        background-image: linear-gradient(to top, #2376bc 0%, #77a4ee 100%)
+    &::-ms-thumb 
+        background: transparent
+        background-image: linear-gradient(to top, #2376bc 0%, #77a4ee 100%)
+
+input[id=days]
+    &::-webkit-slider-thumb
+        background: transparent
+        background-image: linear-gradient(to top, #2dd07d 0%, #54df98 100%)
+    &::-moz-range-thumb
+        background: transparent
+        background-image: linear-gradient(to top, #2dd07d 0%, #54df98 100%)
+    &::-ms-thumb 
+        background: transparent
+        background-image: linear-gradient(to top, #2dd07d 0%, #54df98 100%)
+    &::-webkit-slider-runnable-track
+        background: #0eb55f
+    &::-moz-range-track 
+        background: #0eb55f
+    &::-ms-fill-lower 
+        background: #0eb55f
+    &::-ms-fill-upper 
+        background: #0eb55f
+label
+    span
+        font-weight: 600
+.slider-wrapper
+    p
+        font-size: 24px
+        font-weight: 300
+        line-height: 48px
+        span
+            font-weight: 400
+.get-quiz
+    display: block
+    margin: 0 auto
+    padding: 25px 100px
+            
+
+            
+.email-screen
+    background: url(../img/email.jpg) no-repeat
+    background-size: cover
+    padding: 90px 0 100px
+    h2,p
+        color: #fff
+        span
+            font-weight: 400
+.after-center
+    &::after
+        margin: 30px auto
+        background-color: #fff
+input[id=package]
+    height: 50px
+    border-radius: 5px 0 0 5px
+    border: 1px solid $text
+    border-right: none
+    background-color: #ffffff
+input[id=package-submit]    
+    border-radius: 0 5px 5px 0
+    background-image: linear-gradient(-175deg, #5778d7 0%, #4061c0 100%)
+    border: none
+    font-family: "SourceSans"
+    color: #fff
+    font-size: 12px
+    font-weight: 700
+    line-height: 38px
+    text-transform: uppercase
+    letter-spacing: 0.72px
+    &:hover
+        cursor: pointer
+        box-shadow: $box-shadow
+    
+.seventh-screen
+    padding: 100px 0
+.card-wrapper
+    margin-top: 145px
+    .card
+        border: none
+        i
+            font-size: 42px
+            color: #0eb55f
+            margin-bottom: 25px
+    .card-body
+        p
+            font-size: 14px
+            font-weight: 300
+            line-height: 24px
+.author-avatar
+    border-radius: 50%
+    margin-bottom: 15px
+    margin-top: 30px
+        
+
+footer
+    padding: 70px 0
+    background: url(../img/footer-bg.jpg) no-repeat
+    background-size: cover 
+@import "media" // Always at the end

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+    <!-- <base href="/"> -->
+
+    <title>Enquiz.io</title>
+    <meta name="description" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Template Basic Images Start -->
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="icon" href="img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+    <!-- Template Basic Images End -->
+
+    <!-- Custom Browsers Color Start -->
+    <meta name="theme-color" content="#000">
+    <!-- Custom Browsers Color End -->
+
+    <link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg p-0">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.png" alt="">
+                </a>
+                <button class="navbar-toggler hamburger hamburger--spring" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                      </span></button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Возможности</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Стоимость</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Отзывы</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Контакты</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Вход/Регистрация</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="main-screen screen relative">
+        <div class="container mb-200">
+            <div class="row">
+                <div class="col-md-8 col-12">
+                    <h1>Ваш сайт может<br> продавать больше!</h1>
+                    <p class="m-60">Используйте квизы для незаметного вовлечения Ваших посетителей в воронку<br> продаж. С помощью правильно составленных вопросов и красочных картинок<br> давайте Вашим клиентам то, зачем они пришли. Получив контакты свяжитесь<br> и сделайте горячее предложение, зная его ответы на поставленные вопросы.</p>
+                    <button class="btn test-quiz">Пройти тестовый квиз</button>
+                </div>
+                <div class="col-md-4 col-12">
+                    <img src="img/main-img.png" alt="" class="main-img img-responsive">
+                </div>
+            </div>
+        </div>
+        <div class="rectangle absolute">
+            <img src="img/rectangle.png" alt="" class="img-rectangle img-responsive">
+        </div>
+    </main>
+    <section class="second-screen screen">
+        <div class="container">
+            <div class="column">
+                <h2 class="text-center mb-115">Наши преимущества — Ваши возможности</h2>
+                <div class="capabilities-wrapper mb-200">
+                    <div class="row m-0">
+                        <div class="nav flex-row col-md-5 col-12" id="tabs" role="tablist">
+                            <a class="nav-link btn capability-btn d-flex flex-column align-items-center justify-content-center col-6 p-0 text-center active" id="cap-ask-tab" data-toggle="pill" href="#cap-ask" role="tab" aria-controls="cap-ask" aria-selected="true">
+                                <img src="img/icon-ask.png" alt="">
+                                Различные форматы<br> вопросов и ответов
+                            </a>
+                            <a class="nav-link btn capability-btn d-flex flex-column align-items-center justify-content-center col-6 p-0 text-center" id="cap-task-tab" data-toggle="pill" href="#cap-task" role="tab" aria-controls="cap-task" aria-selected="false">
+                                <img src="img/icon-task.png" alt="">
+                                Задание результатов
+                            </a>
+                            <a class="nav-link btn capability-btn d-flex flex-column align-items-center justify-content-center col-6 p-0 text-center" id="cap-template-tab" data-toggle="pill" href="#cap-template" role="tab" aria-controls="cap-template" aria-selected="false">
+                                <img src="img/icon-template.png" alt="">
+                                Шаблоны квизов<br> на выбор
+                            </a>
+                            <a class="nav-link btn capability-btn d-flex flex-column align-items-center justify-content-center col-6 p-0 text-center" id="cap-layout-tab" data-toggle="pill" href="#cap-layout" role="tab" aria-controls="cap-layout" aria-selected="false">
+                                <img src="img/icon-layout.png" alt="">
+                                Настройка внешнего<br> вида
+                            </a>
+                            <a class="nav-link btn capability-btn d-flex flex-column align-items-center justify-content-center col-6 p-0 text-center" id="cap-logic-tab" data-toggle="pill" href="#cap-logic" role="tab" aria-controls="cap-logic" aria-selected="false">
+                                <img src="img/icon-logic.png" alt="">
+                                Ветвление логики
+                            </a>
+                            <a class="nav-link btn capability-btn d-flex flex-column align-items-center justify-content-center col-6 p-0 text-center" id="cap-contact-tab" data-toggle="pill" href="#cap-contact" role="tab" aria-controls="cap-contact" aria-selected="false">
+                                <img src="img/icon-contact.png" alt="">
+                                Умный и тактичный<br> сбор контактов
+                            </a>
+                            <a class="nav-link btn capability-btn d-flex flex-column align-items-center justify-content-center col-6 p-0 text-center" id="cap-stimulate-tab" data-toggle="pill" href="#cap-stimulate" role="tab" aria-controls="cap-stimulate" aria-selected="false">
+                                <img src="img/icon-stimulate.png" alt="">
+                                Дополнительная<br> стимуляция
+                            </a>
+                            <a class="nav-link btn capability-btn d-flex flex-column align-items-center justify-content-center col-6 p-0 text-center" id="cap-crm-tab" data-toggle="pill" href="#cap-crm" role="tab" aria-controls="cap-template" aria-selected="false">
+                                <img src="img/icon-crm.png" alt="">
+                                CRM, экспорт<br> и вебхуки
+                            </a>
+                        </div>
+                        <div class="tab-content col-md-7 col-12" id="tabContent">
+                            <div class="tab-pane fade show active" id="cap-ask" role="tabpanel" aria-labelledby="cap-ask-tab">
+                                <div class="capability-img__wrapper">
+                                    <img src="img/cap-ask.png" alt="" class="capability-img img-responsive">
+                                </div>
+                                <div class="capability-descr__wrapper">
+                                    <p class="capability-descr text-center">Всевозможные виды вопросов от числового до загрузки файла не ограничивают вас в творчестве</p>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="cap-task" role="tabpanel" aria-labelledby="cap-task-tab">
+                                <div class="capability-img__wrapper">
+                                    <img src="img/cap-task.png" alt="" class="capability-img img-responsive">
+                                </div>
+                                <div class="capability-descr__wrapper">
+                                    <p class="capability-descr text-center">Фиксированные результаты или он-лайн расчет по параметрам клиента, используя заданную формулу</p>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="cap-template" role="tabpanel" aria-labelledby="cap-template-tab">
+                                <div class="capability-img__wrapper">
+                                    <img src="img/cap-template.png" alt="" class="capability-img img-responsive">
+                                </div>
+                                <div class="capability-descr__wrapper">
+                                    <p class="capability-descr text-center">Начинать с чистого листа необязательно. У нас большая библиотека готовых для установки и модификации квизов</p>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="cap-layout" role="tabpanel" aria-labelledby="cap-layout-tab">
+                                <div class="capability-img__wrapper">
+                                    <img src="img/cap-layout.png" alt="" class="capability-img img-responsive">
+                                </div>
+                                <div class="capability-descr__wrapper">
+                                    <p class="capability-descr text-center">Настройте цвета, фон, графичские элементы по вкусу в дизайн Вашего сайта</p>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="cap-logic" role="tabpanel" aria-labelledby="cap-logic-tab">
+                                <div class="capability-img__wrapper">
+                                    <img src="img/cap-logic.png" alt="" class="capability-img img-responsive">
+                                </div>
+                                <div class="capability-descr__wrapper">
+                                    <p class="capability-descr text-center">Следующий вопрос или результат зависит от ответа на предыдущий вопрос</p>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="cap-contact" role="tabpanel" aria-labelledby="cap-contact-tab">
+                                <div class="capability-img__wrapper">
+                                    <img src="img/cap-contact.png" alt="" class="capability-img img-responsive">
+                                </div>
+                                <div class="capability-descr__wrapper">
+                                    <p class="capability-descr text-center">Фиксированные результаты или он-лайн расчет по параметрам клиента, используя заданную формулу</p>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="cap-stimulate" role="tabpanel" aria-labelledby="cap-stimulate-tab">
+                                <div class="capability-img__wrapper">
+                                    <img src="img/cap-stimulate.png" alt="" class="capability-img img-responsive">
+                                </div>
+                                <div class="capability-descr__wrapper">
+                                    <p class="capability-descr text-center">Повышение конверсии через нарастающую скидку</p>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="cap-crm" role="tabpanel" aria-labelledby="cap-crm-tab">
+                                <div class="capability-img__wrapper">
+                                    <img src="img/cap-crm.png" alt="" class="capability-img img-responsive">
+                                </div>
+                                <div class="capability-descr__wrapper">
+                                    <p class="capability-descr text-center">Собранные данные легко обработать или перенаправить в другой инструмент</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="third-screen screen">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <img class="img-responsive icon-big" src="img/icon-big.png" alt="">
+                </div>
+                <div class="col-md-6 col-12">
+                    <h2 class="after">Новая эпоха в способах<br> привлечения клиентов</h2>
+                    <p>Или лучше сказать, это забытое старое. Квиз-маркетинг уже давно<br> распространен на западе, и уже набирает оборты у нас. Это особенно<br> актуально в условиях, когда имеющиеся инструменты вроде захватчиков<br> внимания, обратного звонка и даже он-лайн консультантов дают<br> все меньше конверсии. Получайте заявки, сегментируйте клиентов,<br> предлагайте то, что им нужно.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="fourth-screen screen relative">
+        <div class="container">
+            <div class="column">
+                <h2 class="text-center">Как это работает?</h2>
+                <div class="feature-item col-12 p-0 d-flex flex-md-row flex-column justify-content-between">
+                    <div class="col-md-6 col-12 feature-item__img">
+                        <img class="img-responsive" src="img/feature__1.jpg" alt="">
+                    </div>
+                    <div class="col-md-6 col-12 feature-item__descr">
+                        <h3>Предлагаете посетителю пройти тест</h3>
+                        <p>Создаёте 5-7 вопросов для клиентов с вариантами ответов в системе. Готовый тест (он же называется "квиз") устанавливаете на сайт по простой инструкции. Если нет сайта или желания устанавливать код, просто направьте клиентов по спецальной ссылке. Это отлично подходит для соц. сетей.</p>
+                        <button class="btn feature-btn">Демонстрация возможности</button>
+                    </div>
+                </div>
+                <div class="feature-item col-12 p-0 d-flex flex-md-row flex-column justify-content-between">
+                    <div class="col-md-6 order-2 order-md-1 col-12 feature-item__descr">
+                        <h3>Посетитель отвечает на вопросы теста и оставляет свой контакт</h3>
+                        <p>Создаёте 5-7 вопросов для клиентов с вариантами ответов в системе. Готовый тест (он же называется "квиз") устанавливаете на сайт по простой инструкции. Если нет сайта или желания устанавливать код, просто направьте клиентов по спецальной ссылке. Это отлично подходит для соц. сетей.</p>
+                        <button class="btn feature-btn">Демонстрация возможности</button>
+                    </div>
+                    <div class="col-md-6 order-1 order-md-2 col-12 feature-item__img">
+                        <img class="img-responsive" src="img/feature__2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="feature-item col-12 p-0 d-flex flex-md-row flex-column justify-content-between">
+                    <div class="col-md-6 col-12 feature-item__img">
+                        <img class="img-responsive" src="img/feature__3.png" alt="">
+                    </div>
+                    <div class="col-md-6 col-12 feature-item__descr">
+                        <h3>Связываетесь с клиентом и предлагаете именно тот товар или услуги, которые ему реально нужны</h3>
+                        <p>Создаёте 5-7 вопросов для клиентов с вариантами ответов в системе. Готовый тест (он же называется "квиз") устанавливаете на сайт по простой инструкции. Если нет сайта или желания устанавливать код, просто направьте клиентов по спецальной ссылке. Это отлично подходит для соц. сетей.</p>
+                        <button class="btn feature-btn">Демонстрация возможности</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rectangle absolute">
+            <img src="img/rectangle-2.png" alt="" class="img-rectangle img-responsive">
+        </div>
+    </section>
+    <section class="fifth-screen screen">
+        <div class="container">
+            <div class="column align-items-center">
+                <h2 class="text-center">Выберите свой тариф</h2>
+                <div class="slider-wrapper ">
+                    <form class="slider-form" action="#" method="post">
+                        <div class="form-row">
+                            <div class="col-10 offset-1 d-flex flex-column align-items-start form-group">
+                                <label for="request">Выбрать количество заявок: <span id="request_value"></span></label>
+                                <input id="request" min="0" max="6" step="1" value="0" type="range">
+                            </div>
+                            <div class="col-10 offset-1 d-flex flex-column align-items-start form-group">
+                                <label for="days">Выбрать количество дней: <span id="days_value"></span></label>
+                                <input id="days" type="range" min="0" max="3" step="1" value="0" >
+                            </div>
+                        </div>
+
+                    </form>
+                    <p class="text-center">Ваш итог: <span id="totalTariff"></span> руб.</p>
+                </div>
+                <button class="btn test-quiz get-quiz">Заказать квиз</button>
+            </div>
+        </div>
+    </section>
+    <section class="sixth-screen screen email-screen">
+        <div class="container">
+            <div class="column">
+                <h2 class="text-center after after-center">Не хочется разбираться в квизах?</h2>
+                <p class="text-center">Это не сложно, но мы готовы выполнить работы под ключ. Изучим вашу тематику, аудиторию, продукцию.<br> Разработаем вопросы и подберем классные картинки. Установим на сайт.<br> Вам лишь останется обработать заявки.</p>
+                <p class="text-center">Стоимость пакета <span>9900</span> руб. Сразу же дарим <span>250</span> заявок на счет.</p>
+                <form action="#" class="row justify-content-center" method="post">
+                    <input class="col-md-6 col-10" id="package" onfocus="this.placeholder=''" onblur="this.placeholder='Введите ваш email'" placeholder="Введите ваш email" type="email">
+                    <input class="col-md-2 col-10" id="package-submit" type="submit" value="получить пакет">
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="seventh-screen screen">
+        <div class="container">
+            <div class="column">
+                <h2 class="text-center">Отзывы о продукте</h2>
+                <div class="card-wrapper row">
+                    <div class="card col-md-4 col-10 offset-1 offset-md-0 ">
+                        <i class="fas fa-quote-left text-center"></i>
+                        <div class="card-body p-0">
+                            <p class="card-text text-center">Это действительно работает. Квизы не раздражают<br> людей в отличие от всплывающих окон и консультантов.<br> Заявок стало больше, конверсия увеличилась в 3 раза.</p>
+                            <div class="author-wrapper d-flex flex-column align-items-center justify-content-between">
+                                <img src="img/avatar.jpg" alt="" class="author-avatar">
+                                <p class="author-name">Михаил Новиков</p>
+                                <p class="author-name">Частный предприниматель</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-md-4 col-10 offset-1 offset-md-0 ">
+                        <i class="fas fa-quote-left text-center"></i>
+                        <div class="card-body p-0">
+                            <p class="card-text text-center">Это действительно работает. Квизы не раздражают<br> людей в отличие от всплывающих окон и консультантов.<br> Заявок стало больше, конверсия увеличилась в 3 раза.</p>
+                            <div class="author-wrapper d-flex flex-column align-items-center justify-content-between">
+                                <img src="img/avatar.jpg" alt="" class="author-avatar">
+                                <p class="author-name">Михаил Новиков</p>
+                                <p class="author-name">Частный предприниматель</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-md-4 col-10 offset-1 offset-md-0 ">
+                        <i class="fas fa-quote-left text-center"></i>
+                        <div class="card-body p-0">
+                            <p class="card-text text-center">Это действительно работает. Квизы не раздражают<br> людей в отличие от всплывающих окон и консультантов.<br> Заявок стало больше, конверсия увеличилась в 3 раза.</p>
+                            <div class="author-wrapper d-flex flex-column align-items-center justify-content-between">
+                                <img src="img/avatar.jpg" alt="" class="author-avatar">
+                                <p class="author-name">Михаил Новиков</p>
+                                <p class="author-name">Частный предприниматель</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p class="text-center">Enquiz.io</p>
+            <nav class="navbar navbar-expand">
+                <div class="navbar-collapse justify-content-center">
+                    <ul class="navbar-nav flex-md-row flex-column">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Возможности</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Стоимость</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Отзывы</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </footer>
+    <script src="js/scripts.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+</body>
+
+</html>
