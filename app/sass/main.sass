@@ -51,6 +51,8 @@ b, strong
     margin-bottom: 200px
 .mt-200
     margin-top: 200px
+.mt-45
+    margin-top: 45px
 
 .navbar-toggler
     &:focus
@@ -86,10 +88,11 @@ a.btn, button.btn
     font-weight: 600
     line-height: 32px
     text-transform: uppercase
-
+a, button, a.btn, button.btn, input[type=submit]
+    transition: 0.2s all ease-in
   
 .screen
-    padding: 30px 0
+    padding: 45px 0
 header
     padding: 20px 0
 
@@ -100,7 +103,7 @@ header
 .fourth-screen
     .rectangle
         right: 0
-        bottom: -5%
+        bottom: 0%
 
 .nav-item
     .nav-link
@@ -111,6 +114,11 @@ header
         margin: 5px 10px
         &:hover
             color: $hover
+.navbar-footer
+    .nav-item
+        .nav-link
+            &:hover
+                color: #fff
         
 .test-quiz
     border: 2px solid transparent
@@ -155,13 +163,14 @@ a.capability-btn
     margin: 10px 12px 10px 0
 .capability-img
     margin: 0 auto
+    max-height: 338px
 .capability-descr__wrapper
     max-width: 90%
     margin: 0 auto
 .third-screen
     padding: 120px 0 70px
     box-shadow: 0 0 17px 3px rgba(0, 0, 0, 0.3)
-    background-image: linear-gradient(to left, #66cfdc 0%, #77dce9 100%)
+    background: #ebf7f9
 
 .after
     &:after
@@ -323,14 +332,14 @@ label
     &::after
         margin: 30px auto
         background-color: #fff
-input[id=package]
-    height: 50px
-    border-radius: 5px 0 0 5px
-    border: 1px solid $text
-    border-right: none
-    background-color: #ffffff
+//input[id=package]
+//    height: 50px
+//    border-radius: 5px 0 0 5px
+//    border: 1px solid $text
+//    border-right: none
+//    background-color: #ffffff
 input[id=package-submit]    
-    border-radius: 0 5px 5px 0
+    border-radius: 5px 5px
     background: #5778d7
     border: none
     font-family: "SourceSans"
@@ -343,6 +352,8 @@ input[id=package-submit]
     &:hover
         cursor: pointer
         box-shadow: $box-shadow
+        background: #fff
+        color: #5778d7
     
 .seventh-screen
     padding: 100px 0

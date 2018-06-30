@@ -14,7 +14,7 @@ $(function () {
         $(this).addClass("active");
     });
     //smoothscroll
-    $("#anchors li a[href^='#']").on('click', function (e) {
+    $(".navbar-nav li a[href^='#']").on('click', function (e) {
 
         // prevent default anchor click behavior
         e.preventDefault();
@@ -37,7 +37,7 @@ $(function () {
     ////slider values
     var inputRange_request = document.getElementById("request"), //получаем слайдер
         outputRange_request = document.getElementById("request_value"), //получаем id куда выводить значение
-        customRequest_value = [10, 50, 100, 250, 500, 1000, 'unlimited'], //вносим значения, которые будем сопоставлять
+        customRequest_value = [10, 50, 100, 250, 500, 1000, 2000, 'unlimited'], //вносим значения, которые будем сопоставлять
         inputRange_days = document.getElementById("days"), //получаем слайдер
         outputRange_days = document.getElementById("days_value"), //получаем id куда выводить значение
         customDays_value = [30, 90, 182, 365], //вносим значения, которые будем сопоставлять
@@ -64,7 +64,7 @@ $(function () {
         upadteTariffCost();// вызываем функцию обновления стоимости тарифа
     };
 
-    function upadteTariffCost() { //обновляем тарифную стоимость по значениям ползунков. отрефакторить на switch case
+    function upadteTariffCost() { //обновляем тарифную стоимость по значениям ползунков. ничего лучше не придумал :(
 
         if (inputRange_request.value == 0 && inputRange_days.value == 0) {
             outputTariff.textContent = 300
@@ -87,7 +87,7 @@ $(function () {
         } else if (inputRange_request.value == 2 && inputRange_days.value == 1) {
             outputTariff.textContent = 1500
         } else if (inputRange_request.value == 2 && inputRange_days.value == 2) {
-            outputTariff.textContent = 200
+            outputTariff.textContent = 2000
         } else if (inputRange_request.value == 2 && inputRange_days.value == 3) {
             outputTariff.textContent = 2500
         } else if (inputRange_request.value == 3 && inputRange_days.value == 0) {
@@ -130,7 +130,16 @@ $(function () {
             outputTariff.textContent = 20000
         } else if (inputRange_request.value == 7 && inputRange_days.value == 3) {
             outputTariff.textContent = 30000
+        } else if (inputRange_request.value == 8 && inputRange_days.value == 0) {
+            outputTariff.textContent = 8000
+        } else if (inputRange_request.value == 8 && inputRange_days.value == 1) {
+            outputTariff.textContent = 12000
+        } else if (inputRange_request.value == 8 && inputRange_days.value == 2) {
+            outputTariff.textContent = 20000
+        } else if (inputRange_request.value == 8 && inputRange_days.value == 3) {
+            outputTariff.textContent = 30000
         }
+        
     }
 
 });
